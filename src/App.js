@@ -1,7 +1,6 @@
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 //pages and components
-import Landing from './pages/landing/Landing'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
 
