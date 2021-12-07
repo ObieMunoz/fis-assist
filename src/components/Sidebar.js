@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 
 // components
-import Avatar from "./Avatar"
+// import Avatar from "./Avatar"
 
 // styles & images
 import "./Sidebar.css"
