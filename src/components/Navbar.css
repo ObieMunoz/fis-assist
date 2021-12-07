@@ -17,6 +17,7 @@
 	display: flex;
 	align-items: center;
 	margin-right: auto;
+	margin-left: 20px;
 }
 .navbar .logo img {
 	margin-right: 10px;
