@@ -34,7 +34,6 @@ export default function Create() {
       axios.spread((...allData) => {
         const allStudentData = allData[0].data
         const allAssignmentData = allData[1].data
-        console.log(allData[0].data)
         setStudents(allStudentData)
         setAssignments(allAssignmentData)
       })
@@ -46,6 +45,14 @@ export default function Create() {
   }, [])
   // create user values for react-select
 
+  const studentOpts = students.map((s) => {
+    return {value: `${s.id}`, label: `${s.first_name}`}
+  })
+
+  const assignmentOpts = assignments.map((assignment)=> {
+    return {value: `${assignment.id}`, label: `${assignment.title}`}
+  })
+
 
   return (
     <div className="create-form">
@@ -56,6 +63,20 @@ export default function Create() {
           <input
             required 
             type="text" 
+          />
+        </label>
+        <label>
+          <span>Student:</span>
+          <Select className="select"
+            onChange={(option)=>console.log(option)}
+            options={studentOpts}
+          />
+        </label>
+        <label>
+          <span>Assignment:</span>
+          <Select className="select"
+            onChange={(option)=>console.log(option)}
+            options={assignmentOpts}
           />
         </label>
         <button className="btn">Add Question</button>

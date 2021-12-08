@@ -23,7 +23,25 @@ export default function Sidebar() {
             <li>
               <NavLink exact to="/">
                 <img src={DashboardIcon} alt="dashboard icon" />
-                <span>Dashboard</span>
+                <span>Phase 1</span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/phase2">
+                <img src={DashboardIcon} alt="dashboard icon" />
+                <span>Phase 2 </span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/phase3">
+                <img src={DashboardIcon} alt="dashboard icon" />
+                <span>Phase 3 </span>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/phase4">
+                <img src={DashboardIcon} alt="dashboard icon" />
+                <span>Phase 4 </span>
               </NavLink>
             </li>
             <li>
