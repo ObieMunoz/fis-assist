@@ -7,14 +7,6 @@ import { useHistory } from 'react-router'
 // styles
 import './Create.css'
 
-const categories = [
-  { value: 'setup', label: 'Setup' },
-  { value: 'html', label: 'Html' },
-  { value: 'css', label: 'CSS' },
-  { value: 'javascript', label: 'JavaScript' },
-  { value: 'dom', label: 'Dom Manipulation' }
-]
-
 export default function Create() {
   const history = useHistory()
 

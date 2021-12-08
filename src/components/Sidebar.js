@@ -1,15 +1,25 @@
 import { NavLink } from "react-router-dom"
+import CourseLinks from './CourseLinks'
+import { useFetch } from '../hooks/useFetch'
 
 // components
 // import Avatar from "./Avatar"
 
 // styles & images
 import "./Sidebar.css"
-import DashboardIcon from '../assets/dashboard_icon.svg'
+
 import AddIcon from '../assets/add_icon.svg'
 
 
 export default function Sidebar() {
+
+  const { data } = useFetch(`http://localhost:9292/courses`)
+
+  console.log(data)
+
+  // const courseLinks = data.map((d)=> (
+  //   <CourseLinks key={d.id} courses={d}/>
+  // ))
 
   return (
     <div className="sidebar">
@@ -20,30 +30,9 @@ export default function Sidebar() {
         </div>  
         <nav className="links">
           <ul>
-            <li>
-              <NavLink exact to="/">
-                <img src={DashboardIcon} alt="dashboard icon" />
-                <span>Phase 1</span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/phase2">
-                <img src={DashboardIcon} alt="dashboard icon" />
-                <span>Phase 2 </span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/phase3">
-                <img src={DashboardIcon} alt="dashboard icon" />
-                <span>Phase 3 </span>
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="/phase4">
-                <img src={DashboardIcon} alt="dashboard icon" />
-                <span>Phase 4 </span>
-              </NavLink>
-            </li>
+            {data && data.map((d)=> (
+            <CourseLinks key={d.id} courses={d}/>
+            ))}
             <li>
               <NavLink to="/create">
                 <img src={AddIcon} alt="add project icon" />

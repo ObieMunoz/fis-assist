@@ -14,10 +14,6 @@ export default function Dashboard() {
     .then((r) => r.json())
     .then(data => setData(data));
   }, [])
-
-console.log(data)
-
-
   
   return (
     <div>
