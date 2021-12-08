@@ -1,8 +1,22 @@
-.landing {
+.container {
 	display: grid;
-  
+	height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: minmax(200px, auto);
+	grid-template-areas:
+		'side 	nav		nav'
+		'side		main		main'
+		'side		footer footer';
 }
 
-.landing img {
-	height: 200px;
+.container .hero {
+	grid-area: main;
+	height: 50px;
+	opacity: 60%;
+	justify-self: center;
+	align-self: center;
+}
+
+.hero img {
+	height: 300px;
 }

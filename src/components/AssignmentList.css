@@ -1,0 +1,39 @@
+.assignment-list {
+	margin-top: 40px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+}
+.assignment-list a {
+	background-color: #fff;
+	padding: 16px;
+	border-radius: 6px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+	text-decoration: none;
+	color: inherit;
+}
+.assignment-list h4 {
+	font-size: 0.9em;
+	color: var(--heading-color);
+}
+.assignment-list p {
+	color: var(--text-color);
+	font-size: 0.9em;
+}
+.assignment-list .assigned-to {
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top: 1px solid #eee;
+}
+.assignment-list ul {
+	margin: 10px 0;
+	display: flex;
+}
+.assignment-list li {
+	margin-right: 10px;
+}
+.assignment-list .avatar {
+	width: 30px;
+	height: 30px;
+}

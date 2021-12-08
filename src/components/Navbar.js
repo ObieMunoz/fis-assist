@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom'
 
-import Logo from '../assets/fis_logo.svg'
-
 // styles & images
 import './Navbar.css'
 

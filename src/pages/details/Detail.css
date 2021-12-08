@@ -1,0 +1,79 @@
+.assignment-details {
+	display: grid;
+	grid-template-columns: 1fr;
+	align-items: start;
+	grid-gap: 60px;
+}
+
+/* assignment summary */
+.assignment-summary {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 4px;
+}
+.assignment-summary .desc {
+	margin: 10px 0;
+	font-size: 0.9em;
+	color: #262626;
+}
+.assignment-summary .details {
+	margin: 30px 0;
+	color: var(--text-color);
+	line-height: 1.8em;
+	font-size: 0.9em;
+}
+.assignment-summary h4 {
+	color: var(--text-color);
+	font-size: 0.9em;
+}
+.assignment-summary .assigned-users {
+	display: flex;
+	margin-top: 20px;
+}
+.assignment-summary .assigned-users .avatar {
+	margin-right: 10px;
+}
+.assignment-summary + .btn {
+	margin-top: 20px;
+}
+/* .assignment-comments label {
+	margin-bottom: 0px;
+}
+.assignment-comments textarea {
+	min-height: 40px;
+	font-size: 1.5em;
+}
+.assignment-comments h4 {
+	color: var(--heading-color);
+}
+.assignment-comments li {
+	padding: 16px;
+	border-radius: 4px;
+	border: 1px solid #f2f2f2;
+	margin-top: 20px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+	background: #fff;
+}
+.comment-author {
+	display: flex;
+	align-items: center;
+	color: var(--title-color);
+}
+.comment-author .avatar {
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.comment-date {
+	color: var(--text-color);
+	font-size: 0.9em;
+	margin: 4px 0 10px;
+}
+.comment-content {
+	color: var(--text-color);
+	font-size: 0.9em;
+}
+
+.add-comment span {
+	color: var(--heading-color);
+} */
