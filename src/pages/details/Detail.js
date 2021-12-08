@@ -8,11 +8,11 @@ import './Detail.css'
 
 export default function Project() {
   const { id } = useParams()
-  const { data } = useFetch(`http://localhost:9292/assignment/${id}`)
+  const { data } = useFetch(`http://localhost:9292/assignment/${id}/questions`)
 
   return (
     <div className="assignment-details">
-      {data && <DetailSummary assignment={data}/>}
+      {data && <DetailSummary questions={data}/>}
     </div>
   )
 }

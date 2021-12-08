@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
-
+import Select from 'react-select'
+import axios from 'axios'
 import { useHistory } from 'react-router'
 
 
@@ -20,7 +21,29 @@ export default function Create() {
   // form field values
   const [formData, setFormData] = useState('')
 
+  // populating Select Variables
+  const [students, setStudents] = useState([])
+  const [assignments, setAssignments] = useState([])
 
+  const fetchData = () => {
+    const studentsUrl = 'http://localhost:9292/students'
+    const assignmentsUrl = 'http://localhost:9292/assignments'
+    const getStudents = axios.get(studentsUrl)
+    const getAssignments = axios.get(assignmentsUrl)
+    axios.all([getStudents, getAssignments]).then(
+      axios.spread((...allData) => {
+        const allStudentData = allData[0].data
+        const allAssignmentData = allData[1].data
+        console.log(allData[0].data)
+        setStudents(allStudentData)
+        setAssignments(allAssignmentData)
+      })
+    )
+  }
+
+  useEffect(() => {
+    fetchData()
+  }, [])
   // create user values for react-select
 
 
