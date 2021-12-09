@@ -1,44 +1,48 @@
 .assignment-details {
-	display: grid;
-	grid-template-columns: 1fr;
-	align-items: start;
-	grid-gap: 60px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  grid-gap: 60px;
 }
 /* assignment summary */
 .assignment-summary {
-	background-color: #fff;
-	padding: 30px;
-	border-radius: 4px;
-	width: 800px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  width: 800px;
 }
 .assignment-summary .desc pre {
-	margin: 10px 0;
-	font-size: 0.9em;
-	color: #262626;
-	width: 750px;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
+  margin: 10px 0;
+  font-size: 0.9em;
+  color: #262626;
+  width: 750px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
 }
 
 .assignment-summary .details {
-	margin: 30px 0;
-	color: var(--text-color);
-	line-height: 1.8em;
-	font-size: 0.9em;
+  margin: 30px 0;
+  color: var(--text-color);
+  line-height: 1.8em;
+  font-size: 0.9em;
 }
 .assignment-summary h4 {
-	color: var(--text-color);
-	font-size: 0.9em;
+  color: var(--text-color);
+  font-size: 0.9em;
 }
 .assignment-summary .assigned-users {
-	display: flex;
-	margin-top: 20px;
+  display: flex;
+  margin-top: 20px;
 }
 .assignment-summary .assigned-users .avatar {
-	margin-right: 10px;
+  margin-right: 10px;
 }
 .assignment-summary + .btn {
-	margin-top: 20px;
+  margin-top: 20px;
+}
+
+.desc {
+  color: black;
 }
 /* .assignment-comments label {
 	margin-bottom: 0px;
