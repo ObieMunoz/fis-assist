@@ -96,7 +96,7 @@ export default function Create() {
       </form>
       <h2 className="page-title">Name not appearing?</h2>
       <button 
-      className="btn"
+      className="new-student"
       onClick={()=> history.push('/newstudent')}
       >
       Create New Student

@@ -1,9 +1,24 @@
 .create-form {
 	max-width: 600px;
 	color: #00fbff;
-	
 }
 
 .select {
 	color: #262626;
+}
+
+.new-student {
+	background: #fff;
+	padding: 8px 12px;
+	border-radius: 4px;
+	color: var(--primary-color);
+	cursor: pointer;
+	font-size: 1em;
+	border: 1px solid var(--primary-color);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.new-student:hover {
+	color: #fff;
+	background-color: var(--primary-color);
 }
