@@ -15,17 +15,10 @@ export default function Sidebar() {
 
   const { data } = useFetch(`http://localhost:9292/courses`)
 
-  console.log(data)
-
-  // const courseLinks = data.map((d)=> (
-  //   <CourseLinks key={d.id} courses={d}/>
-  // ))
-
   return (
     <div className="sidebar">
       <div className="sidebar-content">
         <div className="user">
-          {/* <Avatar src={"../assets/Hawks300.jpg"} /> */}
           <p>Hello Student</p>  
         </div>  
         <nav className="links">

@@ -21,9 +21,8 @@
 }
 .navbar .logo img {
 	margin-right: 10px;
-	filter: invert(25%);
-	width: 36px;
-	margin-top: -8px;
+	width: 300px;
+	margin-top: 10px;
 }
 .navbar a {
 	color: rgb(0, 238, 255);

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import Logo from '../assets/fis_logo.svg'
 
 // styles & images
 import './Navbar.css'
@@ -10,12 +11,11 @@ export default function Navbar() {
     <nav className="navbar">
       <ul>
           <li className="logo">
-            <h1>//FIS-Assist</h1>
+            <img src={Logo} alt="logo" />
           </li>
           <>
-          <Searchbar />
+            <Searchbar />
             <li><Link to="/about">About Us</Link></li>
-            
           </>
       </ul>
     </nav>
