@@ -3,8 +3,8 @@ import ContactCards from './ContactCards'
 
 const About = () => {
   const about = [
-    {id: 1, name: "Obie Munoz", title: "Software Engineer", email: "obie.munoz@gmail.com", bio: "code sensei (Obie Wan)"},
-    {id: 2, name: "Rodrigo Alba", title: "Software Engineer", email: "rodrigo.alba@gmail.com", bio: "lifestyle blogger and data wizard"},
+    {id: 1, name: "Obie Munoz", title: "Software Engineer", email: "obiemunozjr@gmail.com", bio: "code sensei (Obie Wan)"},
+    {id: 2, name: "Rodrigo Alba", title: "Software Engineer", email: "rodrigoqalba@gmail.com", bio: "lifestyle blogger and data wizard"},
     {id: 3, name: "Joshua Hawks", title: "Software Engineer", email: "jdhawks@gmail.com", bio: "enjoys making things shiny"}
   ]
   return ( 
