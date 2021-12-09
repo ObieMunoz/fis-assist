@@ -12,10 +12,10 @@ const AssignmentList = ({ assignments }) => {
           <p>{assignment.description}</p>
           <p className="question-count">
             <em>
-              {assignment.questions.length > 0
-                ? assignment.questions.length > 1
-                  ? `${assignment.questions.length} questions`
-                  : `${assignment.questions.length} question`
+              {assignment?.questions?.length > 0
+                ? assignment?.questions?.length > 1
+                  ? `${assignment?.questions?.length} questions`
+                  : `${assignment?.questions?.length} question`
                 : "No questions"}
             </em>
           </p>
