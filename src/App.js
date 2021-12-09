@@ -13,11 +13,10 @@ import DashboardP1 from './pages/dashboard/DashboardP1';
 import DashboardP2 from './pages/dashboard/DashboardP2';
 import DashboardP3 from './pages/dashboard/DashboardP3';
 import DashboardP4 from './pages/dashboard/DashboardP4';
+import Devpage from './pages/devs/Devpage';
+
 
 import './App.css';
-
-
-
 
 function App() {
   return (
@@ -56,6 +55,9 @@ function App() {
           </Route>
           <Route path='/newstudent'>
             <CreateStudent />
+          </Route>
+          <Route path='/flpopo'>
+            <Devpage />
           </Route>
         </Switch>
         </div>
