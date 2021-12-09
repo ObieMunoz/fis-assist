@@ -1,6 +1,4 @@
-h1,
-h3,
-p {
+h3 {
   text-align: center;
 }
 
@@ -8,4 +6,19 @@ p {
 .contact-card h3,
 .contact-card p {
   text-align: left;
+}
+
+.github-issue {
+  display: table;
+  text-align: center;
+  margin: 25px auto;
+  background-color: rgb(0, 238, 255);
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgb(0, 238, 255);
+  padding: 10px;
+}
+
+.github-issue {
+  color: black;
+  text-decoration: none;
 }

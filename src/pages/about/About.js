@@ -34,6 +34,14 @@ const About = () => {
         Journey - please don't hesitate to reach out to us with questions!{" "}
       </h3>
       <ContactCards about={about} />
+      <a
+        className="github-issue"
+        href="https://github.com/ObieMunoz/fis-assist/issues/new"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div>Report a Problem</div>
+      </a>
     </div>
   );
 };
