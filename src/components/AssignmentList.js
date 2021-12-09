@@ -9,7 +9,7 @@ const AssignmentList = ({assignments}) => {
       {assignments.map((assignment) => (
       <Link to={`/details/${assignment.id}`} key={assignment.id}>
         <h4 className="page-title">{assignment.title}</h4>
-        <p>{assignment.description.substring(0,50)}</p>
+        <p>{assignment.description}</p>
       </Link>
       ))}
     </div>

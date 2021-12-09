@@ -62,6 +62,7 @@ export default function Create() {
   return (
     <div className="create-form">
       <h2 className="page-title">Submit a new Question:</h2>
+      <button className="btn"></button>
       <form onSubmit={handleSubmit}>
       <label>
           <span>Question:</span>

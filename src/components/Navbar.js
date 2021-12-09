@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 
 // styles & images
 import './Navbar.css'
+import Searchbar from './Searchbar'
 
 export default function Navbar() {
 
@@ -13,6 +14,7 @@ export default function Navbar() {
           </li>
           <>
             <li><Link to="/about">About Us</Link></li>
+            <Searchbar />
           </>
       </ul>
     </nav>

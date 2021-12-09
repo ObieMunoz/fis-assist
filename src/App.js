@@ -7,6 +7,7 @@ import Create from './pages/create/Create'
 import Dashboard from './pages/dashboard/Dashboard';
 import Detail from './pages/details/Detail';
 import About from './pages/about/About';
+import Search from './pages/search/Search';
 
 import './App.css';
 
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path='/details/:id'>
             <Detail />
+          </Route>
+          <Route path='/search'>
+            <Search />
           </Route>
           <Route path='/about'>
             <About />
