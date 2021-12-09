@@ -5,7 +5,7 @@ import DashboardIcon from '../assets/dashboard_icon.svg'
 const CourseLinks = ({courses}) => {
   return ( 
     <li>
-    <NavLink exact to={courses.id === 1? '/' : `/phase${courses.id - 1}`}>
+    <NavLink exact to={courses.title === "Prework"? '/' : `/phase${courses.id}`}>
       <img src={DashboardIcon} alt="dashboard icon" />
       <span>{courses.title}</span>
     </NavLink>

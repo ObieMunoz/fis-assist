@@ -1,17 +1,14 @@
 import { useState, useEffect } from 'react'
+import { useFetch } from '../../hooks/useFetch'
 import Select from 'react-select'
 import axios from 'axios'
 import { useHistory } from 'react-router'
-
 
 // styles
 import './Create.css'
 
 export default function Create() {
   const history = useHistory()
-
-  // form field values
-  const [formData, setFormData] = useState('')
 
   // populating Select Variables
   const [students, setStudents] = useState([])
@@ -45,29 +42,52 @@ export default function Create() {
     return {value: `${assignment.id}`, label: `${assignment.title}`}
   })
 
+  const { postData, data } = useFetch('http://localhost:9292/questions', 'POST')
+    // form field values
+  const [question, setQuestion] = useState('')
+  const [studentId, setStudentId] = useState('')
+  const [assignmentId, setAssignmentId] = useState('')
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    postData({ question, answer: null, studentId, assignmentId })
+}
+
+  useEffect(() => {
+    if (data) {
+        history.push('/')
+    }
+  }, [data])
 
   return (
     <div className="create-form">
       <h2 className="page-title">Submit a new Question:</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
       <label>
           <span>Question:</span>
           <input
-            required 
-            type="text" 
+            required
+            name="question" 
+            type="text"
+            onChange={(e) => setQuestion(e.target.value)}
+            value={question} 
           />
         </label>
         <label>
           <span>Student:</span>
           <Select className="select"
-            onChange={(option)=>console.log(option)}
+            name="student_id"
+            onChange={(option) => setStudentId(option)}
+            value={studentId}
             options={studentOpts}
           />
         </label>
         <label>
           <span>Assignment:</span>
           <Select className="select"
-            onChange={(option)=>console.log(option)}
+            name="assignment_id"
+            onChange={(option)=> setAssignmentId(option)}
+            value={assignmentId}
             options={assignmentOpts}
           />
         </label>
