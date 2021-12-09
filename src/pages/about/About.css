@@ -1,0 +1,11 @@
+h1,
+h3,
+p {
+  text-align: center;
+}
+
+.contact-card h1,
+.contact-card h3,
+.contact-card p {
+  text-align: left;
+}
