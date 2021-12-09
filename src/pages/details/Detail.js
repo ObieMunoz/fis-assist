@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useFetch } from '../../hooks/useFetch'
 
+
 // components
 import DetailSummary from './DetailSummary'
 // styles

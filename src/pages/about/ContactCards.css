@@ -1,0 +1,8 @@
+.contact-list .contact-card {
+	background-color: #fff;
+	padding: 16px;
+	border-radius: 6px;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.05);
+	text-decoration: none;
+	color: inherit;
+}

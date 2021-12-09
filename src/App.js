@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar'
 import Create from './pages/create/Create'
 import Dashboard from './pages/dashboard/Dashboard';
 import Detail from './pages/details/Detail';
+import About from './pages/about/About';
 
 import './App.css';
 
@@ -27,6 +28,10 @@ function App() {
           <Route path='/details/:id'>
             <Detail />
           </Route>
+          <Route path='/about'>
+            <About />
+          </Route>
+
         </Switch>
         </div>
       </BrowserRouter>                                                                                                                                                         

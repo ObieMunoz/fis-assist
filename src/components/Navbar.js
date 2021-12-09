@@ -12,8 +12,7 @@ export default function Navbar() {
             <h1>//FIS-Assist</h1>
           </li>
           <>
-            <li><Link to="/login">Do Something</Link></li>
-            <li><Link to="/signup">Go Somewhere</Link></li>
+            <li><Link to="/about">About Us</Link></li>
           </>
       </ul>
     </nav>
