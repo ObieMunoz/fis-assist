@@ -22,8 +22,7 @@ export default function Searchbar() {
           id="search" 
           type="text"
           placeholder="Search Assignments" 
-          onChange={(e) => setTerm(e.target.value)} 
-          required 
+          onChange={(e) => setTerm(e.target.value)}  
         />
       </form>
     </div>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useFetch } from '../../hooks/useFetch'
-import { useHistory } from 'react-router'
+import { useHistory } from 'react-router-dom'
 
 const CreateStudent = () => {
 
@@ -22,7 +22,7 @@ const CreateStudent = () => {
     if (data) {
         history.push('/create')
     }
-}, [data])
+  }, [data])
 
   return ( 
       <div className="create-form">
