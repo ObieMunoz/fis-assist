@@ -62,7 +62,6 @@ export default function Create() {
   return (
     <div className="create-form">
       <h2 className="page-title">Submit a new Question:</h2>
-      <button className="btn"></button>
       <form onSubmit={handleSubmit}>
       <label>
           <span>Question:</span>
@@ -93,7 +92,16 @@ export default function Create() {
           />
         </label>
         <button className="btn">Add Question</button>
+
       </form>
+      <h2 className="page-title">Name not appearing?</h2>
+      <button 
+      className="btn"
+      onClick={()=> history.push('/newstudent')}
+      >
+      Create New Student
+      </button>
+
     </div>
   )
 }

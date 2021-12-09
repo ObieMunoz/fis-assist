@@ -1,7 +1,7 @@
 import {useState, useEffect} from 'react'
 
 // components
-import AssignmentFilter from './AssignmentFilter'
+
 import AssignmentList from '../../components/AssignmentList'
 // styles
 import './Dashboard.css'
@@ -18,8 +18,6 @@ export default function Dashboard() {
   return (
     <div>
       <h2 className="page-title">Dashboard</h2>
-      <AssignmentFilter />
-
       <AssignmentList assignments={data}/>
     </div>
   )

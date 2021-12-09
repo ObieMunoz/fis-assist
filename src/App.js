@@ -8,6 +8,7 @@ import Dashboard from './pages/dashboard/Dashboard';
 import Detail from './pages/details/Detail';
 import About from './pages/about/About';
 import Search from './pages/search/Search';
+import CreateStudent from './pages/create/CreateStudent';
 
 import './App.css';
 
@@ -35,7 +36,9 @@ function App() {
           <Route path='/about'>
             <About />
           </Route>
-
+          <Route path='/newstudent'>
+            <CreateStudent />
+          </Route>
         </Switch>
         </div>
       </BrowserRouter>                                                                                                                                                         
