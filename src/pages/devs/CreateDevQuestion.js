@@ -1,51 +1,68 @@
-import { useState } from 'react'
-import { useFetch } from '../../hooks/useFetch'
+import { useState } from "react";
+import { useFetch } from "../../hooks/useFetch";
+import Select from "react-select";
 
-const CreateDevQuestion = () => {
+const CreateDevQuestion = ({ assignments }) => {
+  const [question, setQuestion] = useState("");
+  const [answer, setAnswer] = useState("");
+  const [assignmentId, setAssignmentId] = useState("");
 
+  const assignmentOpts = assignments.map((a) => {
+    return { value: `${a.id}`, label: `${a.title}` };
+  });
 
-  const [question, setQuestion] = useState('')
-  const [answer, setAnswer] = useState('')
-
-  const { postData, data } = useFetch('http://localhost:9292/questions', 'POST')
+  const { postData, data } = useFetch(
+    "http://localhost:9292/questions",
+    "POST"
+  );
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    postData({ question, answer })
+    e.preventDefault();
+    postData({ question, answer, assignmentId });
     if (data !== null) {
-      setQuestion('')
-      setAnswer('')
+      setQuestion("");
+      setAnswer("");
     }
-}
+  };
 
-  return ( 
-      <div className="create-form">
-        <h1>Create a new Question:</h1>
-          <form onSubmit={handleSubmit}>
-          <label>
-              <span>Question:</span>
-              <input
-                required
-                name="title" 
-                type="text"
-                value={question}
-                onChange={(e)=> setQuestion(e.target.value)}
-              />
-            </label>
-            <label>
-              <span>Description:</span>
-              <input
-                required
-                name="description" 
-                type="text"
-                value={answer}
-                onChange={(e)=> setAnswer(e.target.value)}
-              />
-            </label>
-            <button className="btn">Add Course</button>
-          </form>
-      </div>
-   );
-}
- 
+  return (
+    <div className="create-form">
+      <h1>Create a new Question:</h1>
+      <form onSubmit={handleSubmit}>
+        <label>
+          <span>Question:</span>
+          <input
+            required
+            name="title"
+            type="text"
+            value={question}
+            onChange={(e) => setQuestion(e.target.value)}
+          />
+        </label>
+        <label>
+          <span>Answer:</span>
+          <input
+            required
+            name="description"
+            type="text"
+            value={answer}
+            onChange={(e) => setAnswer(e.target.value)}
+          />
+        </label>
+        <label>
+          <span>Assignment:</span>
+          <Select
+            className="select"
+            name="assignment_id"
+            onChange={(option) => setAssignmentId(option)}
+            value={assignmentId}
+            options={assignmentOpts}
+          />
+        </label>
+        <button className="btn">Add Question</button>
+      </form>
+    </div>
+  );
+};
+
 export default CreateDevQuestion;
