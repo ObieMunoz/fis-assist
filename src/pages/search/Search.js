@@ -8,7 +8,8 @@ const Search = () => {
   const queryParams = new URLSearchParams(queryString);
   const query = queryParams.get("q");
 
-  const url = "http://localhost:9292/assignments?q=" + query;
+  const url =
+    "https://nameless-ocean-53939.herokuapp.com/assignments?q=" + query;
   const { error, isPending, data } = useFetch(url);
 
   // console.log(query, data)

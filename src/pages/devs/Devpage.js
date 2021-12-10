@@ -11,9 +11,10 @@ const Devpage = () => {
   const [assignments, setAssignments] = useState([]);
 
   const fetchData = () => {
-    const coursesUrl = "http://localhost:9292/courses";
-    const modsUrl = "http://localhost:9292/mods";
-    const assignmentsUrl = "http://localhost:9292/assignments";
+    const coursesUrl = "https://nameless-ocean-53939.herokuapp.com/courses";
+    const modsUrl = "https://nameless-ocean-53939.herokuapp.com/mods";
+    const assignmentsUrl =
+      "https://nameless-ocean-53939.herokuapp.com/assignments";
     const getCourses = axios.get(coursesUrl);
     const getMods = axios.get(modsUrl);
     const getAssignments = axios.get(assignmentsUrl);

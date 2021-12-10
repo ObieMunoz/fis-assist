@@ -1,44 +1,47 @@
-import { useState } from 'react'
-import { useFetch } from '../../hooks/useFetch'
-import Select from 'react-select'
+import { useState } from "react";
+import { useFetch } from "../../hooks/useFetch";
+import Select from "react-select";
 
-const CreateMod = ({courses}) => {
-
+const CreateMod = ({ courses }) => {
   const courseOpts = courses.map((c) => {
-    return {value: `${c.id}`, label: `${c.title}`}
-  })
+    return { value: `${c.id}`, label: `${c.title}` };
+  });
 
-  const [title, setTitle] = useState('')
-  const [course_id, setCourse_id] = useState('')
+  const [title, setTitle] = useState("");
+  const [course_id, setCourse_id] = useState("");
 
-  const { postData, data } = useFetch('http://localhost:9292/mods', 'POST')
+  const { postData, data } = useFetch(
+    "https://nameless-ocean-53939.herokuapp.com/mods",
+    "POST"
+  );
 
   const handleSubmit = (e) => {
-    e.preventDefault()
-    postData({ title, course_id })
+    e.preventDefault();
+    postData({ title, course_id });
     if (data !== null) {
-      setTitle('')
-      setCourse_id('')
+      setTitle("");
+      setCourse_id("");
     }
-}
+  };
 
-  return ( 
+  return (
     <div className="create-form">
-    <h1>Create a new Mod:</h1>
+      <h1>Create a new Mod:</h1>
       <form onSubmit={handleSubmit}>
-      <label>
+        <label>
           <span>Title:</span>
           <input
             required
-            name="title" 
+            name="title"
             type="text"
             value={title}
-            onChange={(e)=> setTitle(e.target.value)}
+            onChange={(e) => setTitle(e.target.value)}
           />
         </label>
         <label>
           <span>Course:</span>
-          <Select className="select"
+          <Select
+            className="select"
             name="mod_id"
             onChange={(option) => setCourse_id(option)}
             value={course_id}
@@ -48,8 +51,8 @@ const CreateMod = ({courses}) => {
 
         <button className="btn">Add Mod</button>
       </form>
-  </div>
-   );
-}
- 
+    </div>
+  );
+};
+
 export default CreateMod;

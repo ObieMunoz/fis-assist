@@ -59,7 +59,7 @@ $ bundle exec rake server
 ```
 
 This will run your server on port
-[http://localhost:9292](http://localhost:9292).
+[https://nameless-ocean-53939.herokuapp.com](https://nameless-ocean-53939.herokuapp.com).
 
 ### Frontend Setup
 
@@ -83,9 +83,9 @@ Your React app should make fetch requests to your Sinatra backend! Here's an
 example:
 
 ```js
-fetch('http://localhost:9292/test')
-	.then((r) => r.json())
-	.then((data) => console.log(data));
+fetch("https://nameless-ocean-53939.herokuapp.com/test")
+  .then((r) => r.json())
+  .then((data) => console.log(data));
 ```
 
 ## Project Tips

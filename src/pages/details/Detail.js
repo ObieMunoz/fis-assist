@@ -1,19 +1,20 @@
-import { useParams } from "react-router-dom"
-import { useFetch } from '../../hooks/useFetch'
-
+import { useParams } from "react-router-dom";
+import { useFetch } from "../../hooks/useFetch";
 
 // components
-import DetailSummary from './DetailSummary'
+import DetailSummary from "./DetailSummary";
 // styles
-import './Detail.css'
+import "./Detail.css";
 
 export default function Project() {
-  const { id } = useParams()
-  const { data } = useFetch(`http://localhost:9292/assignment/${id}/questions`)
+  const { id } = useParams();
+  const { data } = useFetch(
+    `https://nameless-ocean-53939.herokuapp.com/assignment/${id}/questions`
+  );
 
   return (
     <div className="assignment-details">
-      {data && <DetailSummary questions={data}/>}
+      {data && <DetailSummary questions={data} />}
     </div>
-  )
+  );
 }

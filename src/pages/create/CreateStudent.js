@@ -10,7 +10,10 @@ const CreateStudent = () => {
   const [email, setEmail] = useState("");
   const [slack_username, setSlack_username] = useState("");
 
-  const { postData, data } = useFetch("http://localhost:9292/students", "POST");
+  const { postData, data } = useFetch(
+    "https://nameless-ocean-53939.herokuapp.com/students",
+    "POST"
+  );
 
   const handleStudentSubmit = (e) => {
     e.preventDefault();

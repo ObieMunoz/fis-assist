@@ -15,8 +15,9 @@ export default function Create() {
   const [assignments, setAssignments] = useState([]);
 
   const fetchData = () => {
-    const studentsUrl = "http://localhost:9292/students";
-    const assignmentsUrl = "http://localhost:9292/assignments";
+    const studentsUrl = "https://nameless-ocean-53939.herokuapp.com/students";
+    const assignmentsUrl =
+      "https://nameless-ocean-53939.herokuapp.com/assignments";
     const getStudents = axios.get(studentsUrl);
     const getAssignments = axios.get(assignmentsUrl);
     axios.all([getStudents, getAssignments]).then(
@@ -49,7 +50,7 @@ export default function Create() {
   });
 
   const { postData, data } = useFetch(
-    "http://localhost:9292/questions",
+    "https://nameless-ocean-53939.herokuapp.com/questions",
     "POST"
   );
   // form field values
