@@ -6,7 +6,7 @@ const CreateCourse = () => {
   const [description, setDescription] = useState("");
 
   const { postData, data } = useFetch(
-    "https://nameless-ocean-53939.herokuapp.com/courses",
+    "https://fis-assist.herokuapp.com/courses",
     "POST"
   );
 

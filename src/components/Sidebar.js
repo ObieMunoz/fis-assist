@@ -11,9 +11,7 @@ import "./Sidebar.css";
 import AddIcon from "../assets/add_icon.svg";
 
 export default function Sidebar() {
-  const { data } = useFetch(
-    `https://nameless-ocean-53939.herokuapp.com/courses`
-  );
+  const { data } = useFetch(`https://fis-assist.herokuapp.com/courses`);
 
   return (
     <div className="sidebar">

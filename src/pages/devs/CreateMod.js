@@ -11,7 +11,7 @@ const CreateMod = ({ courses }) => {
   const [course_id, setCourse_id] = useState("");
 
   const { postData, data } = useFetch(
-    "https://nameless-ocean-53939.herokuapp.com/mods",
+    "https://fis-assist.herokuapp.com/mods",
     "POST"
   );
 

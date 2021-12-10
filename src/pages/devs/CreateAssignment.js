@@ -12,7 +12,7 @@ const CreateAssignment = ({ mods }) => {
   const [mod_id, setMod_id] = useState("");
 
   const { postData, data } = useFetch(
-    "https://nameless-ocean-53939.herokuapp.com/assignments",
+    "https://fis-assist.herokuapp.com/assignments",
     "POST"
   );
 

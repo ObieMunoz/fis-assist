@@ -12,7 +12,7 @@ const CreateDevQuestion = ({ assignments }) => {
   });
 
   const { postData, data } = useFetch(
-    "https://nameless-ocean-53939.herokuapp.com/questions",
+    "https://fis-assist.herokuapp.com/questions",
     "POST"
   );
 

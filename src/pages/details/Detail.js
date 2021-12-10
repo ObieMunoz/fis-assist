@@ -9,7 +9,7 @@ import "./Detail.css";
 export default function Project() {
   const { id } = useParams();
   const { data } = useFetch(
-    `https://nameless-ocean-53939.herokuapp.com/assignment/${id}/questions`
+    `https://fis-assist.herokuapp.com/assignment/${id}/questions`
   );
 
   return (

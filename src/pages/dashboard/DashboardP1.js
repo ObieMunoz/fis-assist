@@ -7,7 +7,7 @@ import AssignmentList from "../../components/AssignmentList";
 import "./Dashboard.css";
 
 const DashboardPh1 = () => {
-  const url = "https://nameless-ocean-53939.herokuapp.com/course/2/assignments";
+  const url = "https://fis-assist.herokuapp.com/course/2/assignments";
   const [data, setData] = useState([]);
   useEffect(() => {
     fetch(url)

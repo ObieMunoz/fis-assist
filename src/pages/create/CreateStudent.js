@@ -11,7 +11,7 @@ const CreateStudent = () => {
   const [slack_username, setSlack_username] = useState("");
 
   const { postData, data } = useFetch(
-    "https://nameless-ocean-53939.herokuapp.com/students",
+    "https://fis-assist.herokuapp.com/students",
     "POST"
   );
 
