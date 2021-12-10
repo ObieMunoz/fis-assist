@@ -65,7 +65,7 @@ export default function Create() {
 
   useEffect(() => {
     if (data) {
-      history.push("/");
+      history.push("/fis-assist");
     }
   }, [data, history]);
 
