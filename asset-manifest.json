@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.106d6639.chunk.css",
+    "main.js": "/static/js/main.b7d3967c.chunk.js",
+    "main.js.map": "/static/js/main.b7d3967c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fc246f9e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fc246f9e.js.map",
+    "static/js/2.e4e7c897.chunk.js": "/static/js/2.e4e7c897.chunk.js",
+    "static/js/2.e4e7c897.chunk.js.map": "/static/js/2.e4e7c897.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.106d6639.chunk.css.map": "/static/css/main.106d6639.chunk.css.map",
+    "static/js/2.e4e7c897.chunk.js.LICENSE.txt": "/static/js/2.e4e7c897.chunk.js.LICENSE.txt",
+    "static/media/add_icon.376e9b6a.svg": "/static/media/add_icon.376e9b6a.svg",
+    "static/media/dashboard_icon.bc800f3b.svg": "/static/media/dashboard_icon.bc800f3b.svg",
+    "static/media/fis_logo.0308996f.svg": "/static/media/fis_logo.0308996f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.fc246f9e.js",
+    "static/js/2.e4e7c897.chunk.js",
+    "static/css/main.106d6639.chunk.css",
+    "static/js/main.b7d3967c.chunk.js"
+  ]
+}
