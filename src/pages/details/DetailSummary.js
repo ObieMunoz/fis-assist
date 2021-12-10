@@ -6,7 +6,7 @@ export default function DetailSummary({ questions }) {
       {questions.map((question) => (
         <div key={question.id} className="assignment-summary">
           <h2 className="page-title">{question.question}</h2>
-          {question.answer === null ? (
+          {question?.answer === null ? (
             "This question has not been answered"
           ) : (
             <ReactMarkdown
