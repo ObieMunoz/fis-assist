@@ -26,7 +26,7 @@ const About = () => {
       title: "Software Engineer",
       email: "jdhawks@gmail.com",
       bio: "enjoys making things shiny",
-      link: "https://www.linkedin.com/in/joshua-hawks-7bb474104/",
+      link: "https://www.linkedin.com/in/joshuahawks1",
     },
   ];
   return (
