@@ -41,7 +41,7 @@ const CreateDevQuestion = ({ assignments }) => {
         </label>
         <label>
           <span>Answer:</span>
-          <input
+          <textarea
             required
             name="description"
             type="text"
