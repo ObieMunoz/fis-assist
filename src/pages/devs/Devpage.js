@@ -37,9 +37,9 @@ const Devpage = () => {
   return (
     <div>
       <h1>Dev Tools</h1>
-      <CreateAssignment mods={mods} />
       <CreateCourse />
       <CreateMod courses={courses} />
+      <CreateAssignment mods={mods} />
       <CreateDevQuestion assignments={assignments} />
     </div>
   );
