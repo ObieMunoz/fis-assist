@@ -25,7 +25,6 @@ const Devpage = () => {
         setCourses(allCoursesData);
         setMods(allModsData);
         setAssignments(allAssignmentsData);
-        console.log(allAssignmentsData);
       })
     );
   };
