@@ -10,6 +10,7 @@ const About = () => {
       title: "Software Engineer",
       email: "obiemunozjr@gmail.com",
       bio: "code sensei (Obie Wan)",
+      link: "https://www.linkedin.com/in/obedmunozjr/",
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ const About = () => {
       title: "Software Engineer",
       email: "rodrigoqalba@gmail.com",
       bio: "lifestyle blogger and data wizard",
+      link: "mailto:rodrigoqalba@gmail.com",
     },
     {
       id: 3,
@@ -24,6 +26,7 @@ const About = () => {
       title: "Software Engineer",
       email: "jdhawks@gmail.com",
       bio: "enjoys making things shiny",
+      link: "https://www.linkedin.com/in/joshua-hawks-7bb474104/",
     },
   ];
   return (

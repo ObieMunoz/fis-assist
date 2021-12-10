@@ -1,19 +1,33 @@
 //styles
 
-const ContactCards = ({about}) => {
-  return ( 
+const ContactCards = ({ about }) => {
+  return (
     <div className="assignment-list">
-    {about.map((a) => (
-    <div className="contact-card" key={a.id}>
-      <h1>{a.name}</h1>
-      <h3>{a.title}</h3>
-      <p>{a.email}</p>
-      <b/>
-      <p>{a.bio}</p>
+      {about.map((about) => (
+        <a
+          href={about.link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="contact-card"
+          key={about.id}
+        >
+          <h1>{about.name}</h1>
+          <h3>{about.title}</h3>
+          <p>{about.email}</p>
+          <b />
+          <p>{about.bio}</p>
+        </a>
+      ))}
     </div>
-    ))}
-  </div>
-   );
-}
- 
+  );
+};
+
 export default ContactCards;
+
+/* <div className="contact-card" key={about.id}>
+  <h1>{about.name}</h1>
+  <h3>{about.title}</h3>
+  <p>{about.email}</p>
+  <b />
+  <p>{about.bio}</p>
+</div> */
