@@ -18,7 +18,7 @@ const About = () => {
       title: "Software Engineer",
       email: "rodrigoqalba@gmail.com",
       bio: "lifestyle blogger and data wizard",
-      link: "mailto:rodrigoqalba@gmail.com",
+      link: "https://www.linkedin.com/in/rodrigoqalba/",
     },
     {
       id: 3,
