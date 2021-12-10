@@ -1,36 +1,35 @@
 import { useState } from 'react'
 import { useFetch } from '../../hooks/useFetch'
 
+const CreateDevQuestion = () => {
 
 
-const CreateCourse = () => {
+  const [question, setQuestion] = useState('')
+  const [answer, setAnswer] = useState('')
 
-  const [title, setTitle] = useState('')
-  const [description, setDescription] = useState('')
-
-  const { postData, data } = useFetch('http://localhost:9292/courses', 'POST')
+  const { postData, data } = useFetch('http://localhost:9292/questions', 'POST')
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    postData({ title, description})
+    postData({ question, answer })
     if (data !== null) {
-      setTitle('')
-      setDescription('')
+      setQuestion('')
+      setAnswer('')
     }
 }
 
   return ( 
       <div className="create-form">
-        <h1>Create a new Course:</h1>
+        <h1>Create a new Question:</h1>
           <form onSubmit={handleSubmit}>
           <label>
-              <span>Title:</span>
+              <span>Question:</span>
               <input
                 required
                 name="title" 
                 type="text"
-                value={title}
-                onChange={(e)=> setTitle(e.target.value)}
+                value={question}
+                onChange={(e)=> setQuestion(e.target.value)}
               />
             </label>
             <label>
@@ -39,8 +38,8 @@ const CreateCourse = () => {
                 required
                 name="description" 
                 type="text"
-                value={description}
-                onChange={(e)=> setDescription(e.target.value)}
+                value={answer}
+                onChange={(e)=> setAnswer(e.target.value)}
               />
             </label>
             <button className="btn">Add Course</button>
@@ -49,4 +48,4 @@ const CreateCourse = () => {
    );
 }
  
-export default CreateCourse;
+export default CreateDevQuestion;

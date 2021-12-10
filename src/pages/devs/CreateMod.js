@@ -16,6 +16,10 @@ const CreateMod = ({courses}) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     postData({ title, course_id })
+    if (data !== null) {
+      setTitle('')
+      setCourse_id('')
+    }
 }
 
   return ( 

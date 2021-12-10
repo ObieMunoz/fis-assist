@@ -1,17 +1,16 @@
-import { useHistory } from 'react-router-dom'
+
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import CreateAssignment from './CreateAssignment'
 import CreateCourse from './CreateCourse'
 import CreateMod from './CreateMod'
+import CreateDevQuestion from './CreateDevQuestion'
 
 const Devpage = () => {
 
-  const history = useHistory()
 
   const [courses, setCourses] = useState([])
   const [mods, setMods] = useState([])
-
 
   const fetchData = () => {
     const coursesUrl = 'http://localhost:9292/courses'
@@ -37,7 +36,8 @@ const Devpage = () => {
       <h1>Dev Tools</h1>
         <CreateAssignment mods={mods}/>
         <CreateCourse />
-        <CreateMod courses={courses}/>        
+        <CreateMod courses={courses}/>
+        <CreateDevQuestion />       
     </div>
    );
 }

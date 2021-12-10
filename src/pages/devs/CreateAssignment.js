@@ -4,7 +4,6 @@ import Select from 'react-select'
 
 const CreateAssignment = ({mods}) => {
 
-
   const modOpts = mods.map((m) => {
     return {value: `${m.id}`, label: `${m.title}`}
   })
@@ -18,6 +17,12 @@ const CreateAssignment = ({mods}) => {
   const handleSubmit = (e) => {
     e.preventDefault()
     postData({ title, description, mod_id })
+    if (data !== null) {
+      setTitle('')
+      setDescription('')
+      setMod_id('')
+    }
+
 }
 
   return ( 
