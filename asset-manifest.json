@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/fis-assist/static/css/main.106d6639.chunk.css",
-    "main.js": "/fis-assist/static/js/main.1fbae97b.chunk.js",
-    "main.js.map": "/fis-assist/static/js/main.1fbae97b.chunk.js.map",
+    "main.js": "/fis-assist/static/js/main.0a2ff929.chunk.js",
+    "main.js.map": "/fis-assist/static/js/main.0a2ff929.chunk.js.map",
     "runtime-main.js": "/fis-assist/static/js/runtime-main.194eb5ed.js",
     "runtime-main.js.map": "/fis-assist/static/js/runtime-main.194eb5ed.js.map",
     "static/js/2.de2a46ec.chunk.js": "/fis-assist/static/js/2.de2a46ec.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.194eb5ed.js",
     "static/js/2.de2a46ec.chunk.js",
     "static/css/main.106d6639.chunk.css",
-    "static/js/main.1fbae97b.chunk.js"
+    "static/js/main.0a2ff929.chunk.js"
   ]
 }
