@@ -9,7 +9,7 @@ const CourseLinks = ({ courses }) => {
         to={
           courses.title === "Prework"
             ? "/fis-assist"
-            : `/phase${courses.title.slice(-1)}`
+            : `/fis-assist/phase${courses.title.slice(-1)}`
         }
       >
         <img src={DashboardIcon} alt="dashboard icon" />
