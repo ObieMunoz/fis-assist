@@ -1,118 +1,31 @@
-# Phase 3 Project Guidelines
+![FIS-Assist-Logo](https://raw.githubusercontent.com/ObieMunoz/fis-assist/main/src/assets/fis_logo.png)
+# FIS Assistance Program
 
 ## Learning Goals
 
-- Build a web basic API with Sinatra and Active Record to support a React
-  frontend
+As this application was built during Phase 3 of the Flatiron School's Software Engineering program, our primary goal was to continue learning. The focus of this project was to build a [Sinatra API backend](http://www.github.com/obiemunoz/fis-assist-backend) that uses ActiveRecord to access and persist data in a database, which will be used by a separate React frontend that interacts with the database via the API.
 
-## Introduction
+## Development Team
+- [Obie Munoz](http://www.linkedin.com/in/obedmunozjr)
+- [Joshua Hawks](http://www.linkedin.com/in/joshuahawks1)
+- [Rodrigo Alba](http://www.linkedin.com/in/rodrigoqalba)
 
-Congrats on getting through all the material for Phase 3! Now's the time to put
-it all together and build something from scratch to reinforce what you know and
-expand your horizons.
+## Purpose
 
-The focus of this project is **building a Sinatra API backend** that uses
-**Active Record** to access and persist data in a database, which will be used
-by a separate **React frontend** that interacts with the database via the API.
+Aside from learning more in Ruby, Sinatra, and React, a goal was to create a useful application for other students currently enrolled in the Flatiron School. Many students frequent Flatiron slack channels requesting assistance for various lab assignments they are stuck on. A greater need for a more organized method of requesting assistance seemed to be present and we decided to address the issue together.
 
-## Requirements
 
-For this project, you must:
+## Project Planning
 
-- Use Active Record to interact with a database.
-- Have a minimum of two models with a one-to-many relationship.
-- Create API routes in Sinatra that handles at least three different CRUD
-  actions for at least one of your Active Record models.
-- Build a separate React frontend application that interacts with the API to
-  perform CRUD actions.
-- Use good OO design patterns. You should have separate classes for each of your
-  models, and create instance and class methods as necessary.
+- Frontend : As far as the frontend development goes, we had several goals in mind:
+  - The student user can see all courses available.
+  - The student user can see all assignments available in each course.
+  - The student user can see all questions linked to each assignment.
+  - The student user can submit a new question.
+  - The frontend will be live and hosted using Github Pages.
 
-For example, build a todo list application with a React frontend interface and a
-Sinatra backend API, where a user can:
+- Backend : To reach the listed goals for the frontend, a database plan was created. See the table layout image below for further information regarding the setup.
+  - The backend will be live and hosted using Heroku.
+    - The production database will be PostgreSQL.
 
-- **Create** a new todo
-- **Read** a list of all todos
-- **Update** an individual todo
-- **Delete** a todo
-
-A `Todo` can be tagged with a `Category`, so that each todo _belongs to_ a
-category and each category _has many_ todos.
-
-## Getting Started
-
-### Backend Setup
-
-This repository has all the starter code needed to get a Sinatra backend up and
-running. [**Fork and clone**][fork link] this repository to get started. Then, run
-`bundle install` to install the gems.
-
-[fork link]: https://github.com/learn-co-curriculum/phase-3-sinatra-react-project/fork
-
-The `app/controllers/application_controller.rb` file has an example GET route
-handler. Replace this route with routes for your project.
-
-You can start your server with:
-
-```console
-$ bundle exec rake server
-```
-
-This will run your server on port
-[https://fis-assist.herokuapp.com](https://fis-assist.herokuapp.com).
-
-### Frontend Setup
-
-Your backend and your frontend should be in **two different repositories**.
-
-Create a new repository in a **separate folder** with a React app for your
-frontend. `cd` out of the backend project directory, and use
-[create-react-app][] to generate the necessary code for your React frontend:
-
-```console
-$ npx create-react-app my-app-frontend
-```
-
-After creating the project locally, you should also
-[create a repository on GitHub][create repo] to host your repo and help
-collaborate, if you're working with a partner.
-
-### Fetch Example
-
-Your React app should make fetch requests to your Sinatra backend! Here's an
-example:
-
-```js
-fetch("https://fis-assist.herokuapp.com/test")
-  .then((r) => r.json())
-  .then((data) => console.log(data));
-```
-
-## Project Tips
-
-- This project is intended to focus more on the backend than the frontend, so
-  try and keep the React side of things relatively simple. Focus on working with
-  Active Record and performing CRUD actions. What are some interesting queries you can write? What kinds of questions can you ask of your data?
-- Once you have a project idea, come up with a domain model and decide what
-  relationships exist between the models in your application. Use a tool like
-  [dbdiagram.io][] to help visualize your models.
-- Decide on your API endpoints. What data should they return? What kind of CRUD
-  action should they perform? What data do they need from the client?
-- Use [Postman][postman download] to test your endpoints.
-- Use `binding.pry` to debug your requests on the server. It's very helpful to use a
-  `binding.pry` in your controller within a route to see what `params` are being
-  sent.
-- Use the [Network Tab in the Dev Tools][network tab] in the frontend to debug
-  your requests.
-
-## Resources
-
-- [create-react-app][]
-- [dbdiagram.io][]
-- [Postman][postman download]
-
-[create-react-app]: https://create-react-app.dev/docs/getting-started
-[create repo]: https://docs.github.com/en/get-started/quickstart/create-a-repo
-[dbdiagram.io]: https://dbdiagram.io/
-[postman download]: https://www.postman.com/downloads/
-[network tab]: https://developer.chrome.com/docs/devtools/network/
+![db-tables-plan](https://raw.githubusercontent.com/ObieMunoz/fis-assist/main/src/assets/plan-tables.png)
