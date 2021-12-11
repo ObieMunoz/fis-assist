@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/fis-assist/static/css/main.106d6639.chunk.css",
-    "main.js": "/fis-assist/static/js/main.606b0c07.chunk.js",
-    "main.js.map": "/fis-assist/static/js/main.606b0c07.chunk.js.map",
+    "main.js": "/fis-assist/static/js/main.f1d77257.chunk.js",
+    "main.js.map": "/fis-assist/static/js/main.f1d77257.chunk.js.map",
     "runtime-main.js": "/fis-assist/static/js/runtime-main.194eb5ed.js",
     "runtime-main.js.map": "/fis-assist/static/js/runtime-main.194eb5ed.js.map",
-    "static/js/2.2c4abc35.chunk.js": "/fis-assist/static/js/2.2c4abc35.chunk.js",
-    "static/js/2.2c4abc35.chunk.js.map": "/fis-assist/static/js/2.2c4abc35.chunk.js.map",
+    "static/js/2.bc431b6c.chunk.js": "/fis-assist/static/js/2.bc431b6c.chunk.js",
+    "static/js/2.bc431b6c.chunk.js.map": "/fis-assist/static/js/2.bc431b6c.chunk.js.map",
     "index.html": "/fis-assist/index.html",
     "static/css/main.106d6639.chunk.css.map": "/fis-assist/static/css/main.106d6639.chunk.css.map",
-    "static/js/2.2c4abc35.chunk.js.LICENSE.txt": "/fis-assist/static/js/2.2c4abc35.chunk.js.LICENSE.txt",
+    "static/js/2.bc431b6c.chunk.js.LICENSE.txt": "/fis-assist/static/js/2.bc431b6c.chunk.js.LICENSE.txt",
     "static/media/add_icon.376e9b6a.svg": "/fis-assist/static/media/add_icon.376e9b6a.svg",
     "static/media/dashboard_icon.bc800f3b.svg": "/fis-assist/static/media/dashboard_icon.bc800f3b.svg",
     "static/media/fis_logo.0308996f.svg": "/fis-assist/static/media/fis_logo.0308996f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.194eb5ed.js",
-    "static/js/2.2c4abc35.chunk.js",
+    "static/js/2.bc431b6c.chunk.js",
     "static/css/main.106d6639.chunk.css",
-    "static/js/main.606b0c07.chunk.js"
+    "static/js/main.f1d77257.chunk.js"
   ]
 }
