@@ -23,7 +23,7 @@ export default function Sidebar() {
           <ul>
             {data && data.map((d) => <CourseLinks key={d.id} courses={d} />)}
             <li>
-              <NavLink to="/create">
+              <NavLink to="/fis-assist/create">
                 <img src={AddIcon} alt="add project icon" />
                 <span>New Question</span>
               </NavLink>
