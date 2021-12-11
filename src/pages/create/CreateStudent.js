@@ -22,7 +22,7 @@ const CreateStudent = () => {
 
   useEffect(() => {
     if (data) {
-      history.push("/fis-assist/create");
+      history.push("/create");
     }
   }, [data, history]);
 
