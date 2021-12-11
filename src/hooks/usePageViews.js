@@ -6,7 +6,7 @@ function usePageViews() {
     let location = useLocation();
     useEffect(() => {
         if (!window.GA_INITIALIZED) {
-            ReactGA.initialize("G-JJCB5XWQM3")
+            ReactGA.initialize("G-JJCB5XWQM3", { siteSpeedSampleRate: 100 });
             window.GA_INITIALIZED = true;
         }
         ReactGA.set({ page: location.pathname });
