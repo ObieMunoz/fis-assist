@@ -19,42 +19,42 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Sidebar />
         <div className="container">
           <Navbar />
           <Switch>
-            <Route exact path="/fis-assist">
+            <Route exact path="/">
               <Dashboard />
             </Route>
-            <Route path="/fis-assist/phase1">
+            <Route path="/phase1">
               <DashboardP1 />
             </Route>
-            <Route path="/fis-assist/phase2">
+            <Route path="/phase2">
               <DashboardP2 />
             </Route>
-            <Route path="/fis-assist/phase3">
+            <Route path="/phase3">
               <DashboardP3 />
             </Route>
-            <Route path="/fis-assist/phase4">
+            <Route path="/phase4">
               <DashboardP4 />
             </Route>
-            <Route path="/fis-assist/create">
+            <Route path="/create">
               <Create />
             </Route>
-            <Route path="/fis-assist/details/:id">
+            <Route path="/details/:id">
               <Detail />
             </Route>
-            <Route path="/fis-assist/search">
+            <Route path="/search">
               <Search />
             </Route>
-            <Route path="/fis-assist/about">
+            <Route path="/about">
               <About />
             </Route>
-            <Route path="/fis-assist/newstudent">
+            <Route path="/newstudent">
               <CreateStudent />
             </Route>
-            <Route path="/fis-assist/flpopo">
+            <Route path="/flpopo">
               <Devpage />
             </Route>
           </Switch>

@@ -7,9 +7,7 @@ const CourseLinks = ({ courses }) => {
       <NavLink
         exact
         to={
-          courses.title === "Prework"
-            ? "/fis-assist"
-            : `/fis-assist/phase${courses.title.slice(-1)}`
+          courses.title === "Prework" ? "/" : `/phase${courses.title.slice(-1)}`
         }
       >
         <img src={DashboardIcon} alt="dashboard icon" />

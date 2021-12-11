@@ -8,7 +8,7 @@ const AssignmentList = ({ assignments }) => {
   return (
     <div className="assignment-list">
       {assignments.map((assignment) => (
-        <Link to={`/fis-assist/details/${assignment.id}`} key={assignment.id}>
+        <Link to={`/details/${assignment.id}`} key={assignment.id}>
           <h4 className="page-title">
             {assignment.title}
             {QuestionCount(assignment)}

@@ -6,12 +6,12 @@ import "./Searchbar.css";
 
 export default function Searchbar() {
   const [term, setTerm] = useState("");
-  const [currentPage, setCurrentPage] = useState("/fis-assist");
+  const [currentPage, setCurrentPage] = useState("/");
   const history = useHistory();
 
   history.listen((location) => {
     if (
-      location.pathname === "/fis-assist" ||
+      location.pathname === "/" ||
       location.pathname === "/phase1" ||
       location.pathname === "/phase2" ||
       location.pathname === "/phase3" ||

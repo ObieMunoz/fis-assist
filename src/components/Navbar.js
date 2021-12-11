@@ -15,7 +15,7 @@ export default function Navbar() {
         <>
           <Searchbar />
           <li>
-            <Link to="fis-assist/about">About Us</Link>
+            <Link to="/about">About Us</Link>
           </li>
         </>
       </ul>
