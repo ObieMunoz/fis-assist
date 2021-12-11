@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
 //pages and components
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
@@ -15,8 +14,10 @@ import DashboardP3 from "./pages/dashboard/DashboardP3";
 import DashboardP4 from "./pages/dashboard/DashboardP4";
 import Devpage from "./pages/devs/Devpage";
 import "./App.css";
+import { usePageViews } from "./hooks/usePageViews";
 
 function App() {
+  usePageViews()
   return (
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
