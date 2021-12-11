@@ -13,14 +13,14 @@ import DashboardP2 from "./pages/dashboard/DashboardP2";
 import DashboardP3 from "./pages/dashboard/DashboardP3";
 import DashboardP4 from "./pages/dashboard/DashboardP4";
 import Devpage from "./pages/devs/Devpage";
+import Analytics from 'react-router-ga'
 import "./App.css";
-import { usePageViews } from "./hooks/usePageViews";
 
 function App() {
-  usePageViews()
   return (
     <div className="App">
       <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Analytics id="G-JJCB5XWQM3">
         <Sidebar />
         <div className="container">
           <Navbar />
@@ -60,6 +60,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+      </Analytics>
       </BrowserRouter>
     </div>
   );
