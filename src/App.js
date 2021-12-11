@@ -14,8 +14,10 @@ import DashboardP2 from "./pages/dashboard/DashboardP2";
 import DashboardP3 from "./pages/dashboard/DashboardP3";
 import DashboardP4 from "./pages/dashboard/DashboardP4";
 import Devpage from "./pages/devs/Devpage";
-
+import ReactGA from "react-ga";
 import "./App.css";
+
+ReactGA.initialize("G-JJCB5XWQM3");
 
 function App() {
   return (
