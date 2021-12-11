@@ -14,10 +14,7 @@ import DashboardP2 from "./pages/dashboard/DashboardP2";
 import DashboardP3 from "./pages/dashboard/DashboardP3";
 import DashboardP4 from "./pages/dashboard/DashboardP4";
 import Devpage from "./pages/devs/Devpage";
-import ReactGA from "react-ga";
 import "./App.css";
-
-ReactGA.initialize("G-JJCB5XWQM3");
 
 function App() {
   return (
@@ -30,34 +27,34 @@ function App() {
             <Route exact path="/fis-assist">
               <Dashboard />
             </Route>
-            <Route path="/phase1">
+            <Route path="/fis-assist/phase1">
               <DashboardP1 />
             </Route>
-            <Route path="/phase2">
+            <Route path="/fis-assist/phase2">
               <DashboardP2 />
             </Route>
-            <Route path="/phase3">
+            <Route path="/fis-assist/phase3">
               <DashboardP3 />
             </Route>
-            <Route path="/phase4">
+            <Route path="/fis-assist/phase4">
               <DashboardP4 />
             </Route>
-            <Route path="/create">
+            <Route path="/fis-assist/create">
               <Create />
             </Route>
-            <Route path="/details/:id">
+            <Route path="/fis-assist/details/:id">
               <Detail />
             </Route>
-            <Route path="/search">
+            <Route path="/fis-assist/search">
               <Search />
             </Route>
-            <Route path="/about">
+            <Route path="/fis-assist/about">
               <About />
             </Route>
-            <Route path="/newstudent">
+            <Route path="/fis-assist/newstudent">
               <CreateStudent />
             </Route>
-            <Route path="/flpopo">
+            <Route path="/fis-assist/flpopo">
               <Devpage />
             </Route>
           </Switch>
