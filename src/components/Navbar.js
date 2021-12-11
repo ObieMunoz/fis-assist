@@ -12,10 +12,10 @@ export default function Navbar() {
         <li className="logo">
           <img src={Logo} alt="logo" />
         </li>
-        <Link>
+        <>
           <Searchbar />
           <li>
-            <Link to="/fis-assist/about">About Us</Link>
+            <Link to="fis-assist/about">About Us</Link>
           </li>
         </>
       </ul>
