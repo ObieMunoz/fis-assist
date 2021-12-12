@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useFetch } from "../../hooks/useFetch";
 import Select from "react-select";
+import DevPreview from "./DevPreview";
 
 const CreateDevQuestion = ({ assignments }) => {
   const [question, setQuestion] = useState("");
@@ -28,6 +29,7 @@ const CreateDevQuestion = ({ assignments }) => {
   return (
     <div className="create-form">
       <h1>Create a new Question:</h1>
+      <DevPreview question={question} answer={answer} />
       <form onSubmit={handleSubmit}>
         <label>
           <span>Question:</span>
